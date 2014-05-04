@@ -13,13 +13,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebDriverTest {
 
     @Test
-    public void testGoogle() {
+    public void testYandex() {
         WebDriver driver = new FirefoxDriver();
-        driver.navigate().to("http://google.com");
-        WebElement search = driver.findElement(By.id("gbqfq"));
+        driver.navigate().to("http://yandex.ru");
+        WebElement search = driver.findElement(By.id("text"));
         search.sendKeys("selenium");
         search.submit();
-        WebElement searchArea = driver.findElement(By.id("search"));
-        searchArea.isDisplayed();
+        driver.close();
     }
 }
