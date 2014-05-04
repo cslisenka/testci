@@ -16,9 +16,9 @@ public class WebDriverTest {
     public void testYandex() {
         WebDriver driver = new FirefoxDriver();
         driver.navigate().to("http://yandex.ru");
-        WebElement search = driver.findElement(By.id("text"));
-        search.sendKeys("selenium");
-        search.submit();
+        //WebElement search = driver.findElement(By.id("text"));
+        //search.sendKeys("selenium");
+        //search.submit();
         driver.close();
     }
 }
